@@ -1,0 +1,73 @@
+:root {
+  --main-color: #009688;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 600px;
+  margin: 80px auto;
+  background: #ededed;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 4px 5px 1px rgb(0 0 0 / 30%);
+}
+.text {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+.underline {
+  width: 60px;
+  height: 2px;
+  margin: 10px auto;
+  background-color: var(--main-color);
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding: 20px 0;
+}
+.tabs button {
+  padding: 10px 10px;
+  border: none;
+}
+.tabs button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+  cursor: pointer;
+}
+.tabs button.active {
+  border-bottom: 3px solid var(--main-color);
+}
+.info h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--main-color);
+  width: fit-content;
+  padding: 10px 0;
+}
+.info h3 {
+  width: fit-content;
+  color: #777;
+  margin-bottom: 10px;
+}
+.info h4 {
+  width: fit-content;
+  padding: 10px;
+  color: #777;
+  background: #ddd;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.info p {
+  line-height: 1.5;
+}
